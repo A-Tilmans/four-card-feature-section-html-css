@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --var-margin-Y: 4.5rem;
+}
+
+/* Outside media query - for mobile screen with width 375px */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color:hsl(0, 0%, 98%);
+    margin: 0;
+}
+
+.container {
+    margin: var(--var-margin-Y) 1.75rem
+}
+
+header {
+    text-align: center; 
+}
+
+#header-first {
+    font-weight: 200;
+    margin-bottom: -1rem;   
+}
+
+#header-paragraph {
+    color:hsl(229, 6%, 66%);
+}
+
+.tool-card {
+    border-radius: 6px;
+    box-shadow: 0 0 15px hsl(234, 12%, 34%);
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+}
+
+.tool-card h3 {
+    margin-top: 0;
+}
+
+.tool-card img {
+    max-width: 18%;
+    max-height: 18%;
+    position: relative;
+    left: 80%;
+}
+
+.supervisor-card {
+    margin-top:var(--var-margin-Y);
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.team-builder-card {
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.karma-card {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.calculator-card {
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+/* Media query for desktop screens */
+
+@media screen and (min-width: 1440px) {
+    header {
+        margin-bottom: var(--var-margin-Y);
+    }
+
+    #header-first, #header-second {
+        font-size: 2.5rem;   
+    }
+
+    #header-first {
+        margin-bottom: -2rem;
+    }
+    
+    .content-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .tool-card {
+        max-width: 350px;
+        box-shadow: 0 5px 20px hsl(229, 6%, 66%);
+    }
+
+    p.attribution {
+        font-size: .75rem;
+    }
+}
